@@ -14,6 +14,7 @@ EuropeanSalesDropped <- subset(EuropeanSalesData, select = -c(Country))
 #install lib for correlation visualization
 install.packages("ggplot2")
 install.packages("corrplot")
+library("corrplot")
 
 #Visualization correlation chart and matrix
 cor(EuropeanSalesDropped)
@@ -53,7 +54,7 @@ layout(matrix(c(1,3,2,4),2,2))
 plot(ModelComSales1)
 #Q-Q and Residuals Leverage shows that #20 and #21 records are outlier...
 
-################################################################################################################################
+#------------------------------------------#
 
 #LR model for SalesperCapita
 #Model was created with Population - GDPperHead - SalesPerCapita
