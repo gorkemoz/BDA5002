@@ -24,7 +24,7 @@ corrplot.mixed(cor(EuropeanSalesDropped), order="hclust", tl.col="black")
 #SalesPerCapita & GDPperHead - EducationSpending
 #Checking their plot
 plot(EuropeanSalesData$GDPperHead,EuropeanSalesData$SalesPerCapita, ylab="Sales", xlab="GDP")
-plot(EuropeanSalesData$EducationSpending,EuropeanSalesData$SalesPerCapita, ylab="EducationSpending", xlab="GDP")
+plot(EuropeanSalesData$EducationSpending,EuropeanSalesData$SalesPerCapita, ylab="Sales", xlab="Education Spending")
 #Plot all measure in the dataset
 plot(EuropeanSalesDropped)
 
